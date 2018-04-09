@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+  <html>
+  <body onload="loadUser()">
+    <div id="target">Loading...</div>
+    <script id="template" type="x-tmpl-mustache">
+      Hello {{ name }}!
+    </script>
+
+    * {{name}}
+    * {{age}}
+    * {{company}}
+    * {{{company}}}
+    * {{&company}}
+    {{=<% %>=}}
+    * {{company}}
+    <%={{ }}=%>
+  </body>
+  </html>
